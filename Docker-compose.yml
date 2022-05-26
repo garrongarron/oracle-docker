@@ -1,0 +1,16 @@
+# https://www.oracle.com/tools/downloads/sqldev-downloads.html
+# username: system
+# password: oracle
+
+
+version: '3'
+
+services: 
+  oracle-db:
+    image: oracleinanutshell/oracle-xe-11g:latest
+    ports:
+      - 1521:1521
+      - 5500:5500
+
+
+# docker-compose up
